@@ -42,7 +42,7 @@ public class PDFGServlet01 extends SlingAllMethodsServlet {
         try {
 
             HelloService helloService = new HelloServiceImpl(repository, generatePdfService, tm);
-            File file = helloService.htmlToPdf("http://www.msn.com", "", "", null, null);
+            File file = helloService.htmlToPdf("http://www.msnbc.com", "", "", null, null);
 
 //            context = FrameworkUtil.getBundle(TransactionManagerLocator.class).getBundleContext();
 //

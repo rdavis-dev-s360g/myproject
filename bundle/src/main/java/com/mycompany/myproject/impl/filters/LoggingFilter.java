@@ -33,7 +33,7 @@ public class LoggingFilter implements Filter {
         // because this is a Sling filter, we can be assured the the request
         // is an instance of SlingHttpServletRequest
         SlingHttpServletRequest slingRequest = (SlingHttpServletRequest) request;
-        logger.debug("request for {}, with selector {}",
+        logger.debug("MY-PROJECT - request for {}, with selector {}",
                 slingRequest.getRequestPathInfo().getResourcePath(),
                 slingRequest.getRequestPathInfo().getSelectorString());
 

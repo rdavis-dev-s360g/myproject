@@ -93,7 +93,7 @@ public class HelloServiceImpl implements HelloService {
             // Commit transaction
             getTransactionManager().commit();
 
-            // Right out the file and return
+            // Write out the file and return
             File outputFile = new File(outputFolder, "Output.pdf");
             convertedDoc.copyToFile(outputFile);
             return outputFile;
